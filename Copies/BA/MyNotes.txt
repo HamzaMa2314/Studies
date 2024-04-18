@@ -1,0 +1,147 @@
+----------------------------------------PRESENTATION---------------------------------------------------------
+
+So since the results of the last research was that Llama would be the best, but i did not consider how
+skillful it is in understand german language, which is very important because most of the search results
+in gaia are in german, the question here comes "does LLama understand german language?"
+
+after a research on how good LlaMa is in each language i found that
+
+LLaMA has been trained on 2 trillion tokens.  most data was English (90%), followed by code (8%), German is on number three with 0.17%.
+
+so the 0.17% of german in training data is not enough to fully understand and accurately process the complexities
+ of German language queries, especially for specialized geospatial data.
+
+so we have multiple solutions, 
+
+obviously hoping and waiting for an updated version is not a solution.
+
+the best solution would be here to find or fine tune the model on german language and specificly on spatial data
+
+easiest solution would be prompt engineering with RAG (which i talked about before in the last presentation)
+an example of that is to tell llama to translate the german query to english then answer it (between itself in english),
+then translate it back to german, but thats a very bad solution in our case because the results will include a lot of 
+hallucinations, grammar errors and when it comes to spatial data we have to be accurate with the language.  
+
+so sticking to fine tuning the model OR finding a whole other model other than llama would be the best.
+
+so i looked if anybody fine tuned llama in german language and i found this extremely improved opensource version of LLama
+that has been trained on a dataset in german language, another idea was to find another LLM that is trained in german which was german BERT and then compare these two
+
+the results of the comparision is as follow
+
+1-- the fine tuned version of llama is focused on conversational german so it handles dialogue better than german BERT, which is important for queries in search function
+2-- the fine tuned version of llama is optimized for contextual understanding, which is very important because in geospatial queries it could include a lot of specialized terms 
+	which requires good handling of locations and data specific context
+3-- last point is that the fine tuned version of llama is also more factually accurate which means its better at extracting correct information from the queries
+
+
+
+These points make Llama-2-13b-chat-german more suitable for dynamic, interactive applications like search functions for geospatial data.
+
+so the optimal solution would be not just to stop here, buut also further fine tune already fine tuned version of llama for geospatial data 
+specificly for with the data we have in our company in DVZ would make this even better to support the search function including other NLP techniques.
+
+
+_______________requirements________
+
+so now comes the question, what are the requirements, or whats possible with our current resources and whats not, what resources are needed for what?
+
+This topic could use more research from me, and im already on it, but for now i made a general simple table to compare what is possible with an average device and what is not.
+
+so in overall it all depends on two main things, the available data, and the results expected, and the results we expect depend a lot on the available data we have, and i still dont
+know exactly what is available, so in other words, to know what requierments are needed for what i need to first know the (goal or the expectation) and to know the expectation i need to know what data is available.
+
+
+but in general i can already say that with an average device its possible to train a model like the fine tuned german llama for less demanding specific tasks
+additionaly there are many ways to solve the problem of low requirements, like Batch Processing Strategy or we could enhance our requirements by using cloud based servers
+or a GPU/CPU external device from our company
+
+so my next step would be to further research the requierement analysis
+
+
+
+_____________________________________________________________________________________________________________
+_____________________________________________________________________________________________________________
+no fine tuning.
+prompt engineering with out data, out of llm and data resource through prompt engineering, post processing.
+multiple virtual machines.
+what would be a good setup? gpu? 
+can we run a trained model on a standard virtual machine or do we need a physical machine? - what requirements are neccessary? 
+
+
+
+
+literature review paper analysis literture..
+
+meeting protocols : presentations
+
+
+1 page
+remove model training?
+design implementation evaluation of the system which compatible - software engineering part, connecting.
+compatiable with the stuff that is already working at DVZ.
+
+
+concept and design of software modules which are compatiable with the requirements at gaialight mv.
+analyse existing endpoints, what kind of data is available ? when ? how often will data change? how often are the databases updated?
+start collecting real questions and desired output, log files, inclduing the final documenting downloaded, where the process stopped, 
+or knowing the set of examples between queries and target.
+at the end u need this to evaluate the system. in which standard search is not successful
+they receieve email of which resources they were looking for, domain knowledge.
+this goes to the requirements analysis, 
+based on those queries, these queries can be put into boxes, easy to answer, solved by searching pdf titles
+another box where u need translation from query term to geoportal terms, done by llm
+use cases query plus required document.
+try to setup the smaller llama, on doker container running this stuff internally. 
+use cases
+analyzing the literature reasearch, identify the kewords that are relevant for my topic
+not literature databases, looking into tutrioals on youtube, because they link to scientific paper.
+then u look at the scientific paper to identifiy the relevant paper, once u find the paper  about identifiying research
+because then u can find papers ..etc
+or u find the authors which leads u to the interesting papers
+identifiy scientific paper
+
+software design and implementation
+
+...within geoportal MV
+
+methodology should include literature review, what has been done and best practices
+
+overview of available documents at internal docs of DVZ
+databases... structure of them . . . . SQL  ?  
+example of documents
+subsection of available data sources.
+
+
+send it to ed first (the anmeldung).
+then to bader signed by ed
+____________________________________________________________________________________________________________
+git lab.
+2. may
+friday signing paper
+
+
+
+_____________________________________________________________________________________________________________
+
+
+-------------------------------------------GANTT--------------------------------------------------------------
+
+Requirement Analysis: First i want to figure exactly what can be improved and if/how an llm can help with that
+
+Data Preperation and Literature review: Then i will start with firstly knowing what data is available, upon that
+					i will do my litertaure review then i can prepare the data so it could 
+					require some data cleaning and structuring
+
+System Design: Here i will have to outline the system,  maybe create a plan showing how the llm will connect 
+		with the existing search system. This could involve 
+			1.diagrams 
+			2.how the llm communicates with the database
+			3. choosing the technology like what programming language
+
+here i estimated 6 to 7 weeks for implementation and testing and then a week for evaluation
+
+Documentation could start with the system design and end with deployment, then 2 weeks for the defense
+-------------------------------------------GANTT----------------------------------------------------------------
+
+

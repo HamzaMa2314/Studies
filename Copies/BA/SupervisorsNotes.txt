@@ -1,0 +1,154 @@
+
+
+notes for next time presentation:
+1. start with a question . . . introduction
+
+2. number the pages
+
+
+TO DO:
+
+1. Description: in the following thesis i will do the following, approaching with these methods, expecting these results, what, why how . . . (DONE)
+
+4. Gantt chart of what i think i will be doing from now until the expected final date. what i think i will spend my time end   (DONE)
+	requirement analysis, literature review, evaluation, implementation,
+
+5. how is Llama in german language? comparison of languages in LLMs
+
+6. requirements? do we need 100 GPUs, whats out of scope?
+
+
+
+
+presetnation about: 
+
+1.Presentation: llama is good in german and for spatial data cuz.. requirements? do we need 100 GPUs, whats out of scope?
+
+llama is not good cuz.., llama - chat - german is perfect, german bert is good, but llama german is better cuz...etc
+requierements..
+
+2. 1-page description
+3. ganttchart
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_________________________________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________________________________________________________
+_________________________________________________________________________________________________________________________________________________________________________________________________
+I explored how LLMS are bind into search functions and i want to talk about two very important components that bind LLMS with searching, and then i want to 
+show study cases on how good LLMS are with  
+
+1.Measuring Geospatial Knowledge
+
+2.Measuring Geospatial Awareness
+
+and an interesting study case comparing geocoding with AI vs geocoding with LLms
+____________________________________________________________________________________________________________________
+(1)
+
+First component is RAG, which is (Retrieval Augmented Generation)
+
+RAG:
+LLMs can only generate text or answers based on what its “seen” or given, rather than pull in new information after the training cut-off. 
+but binding the LLM with RAG; the LLM can perform real time search, so it can access fresh information from external sources like the web
+or given databases.
+making their responses more accurate. and up to date.
+
+1. the user will give the query
+2. the chatbot equipped with RAG will activate search and retrieval function and search online data sources and databases
+3. then this data is fed to the LLM to process
+
+so RAG offers 4 benifits:
+1. it enables the LLM to reason about new data
+2. its easier to update the information
+3. it will help the LLM attribute what the generation is based on, and that helps with staying away from hallucination
+4. It reduces the parameter count needed to reason. Parameter count is what makes these models expensive and impractical for some use cases 
+5. although it reduces the parameter count needed to reason, it will add a little bit of latency to the LLM. which is very important to consider when working with search functions
+ 
+
+
+_________________________________________________________
+(2)
+
+second component which is the most important component is query understanding:
+it involves transforming unstructured data into structured queries
+query understanding takes the query, and transforms it into an SQL to narrow down the search results, other than transoforming it into an SQL
+it could turn it into specific filters or search parameters to narrow down the search results.
+which is very useful for searching for specialized data like geospatial information.
+
+
+
+
+
+
+__________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________
+__________________________________________________________________________________________________________________
+
+
+- this study i found very interesting explores how good LLMS, like LLaMA, OPT, and Alpaca, understand and process geographical data.
+	which is crucial for improving search functions related to geographical information.
+
+
+- they compared the models with more than one number of params, 
+
+- 0 shot was sometimes better than 3 shot because the LLMS where trying too hard to match the examples given.
+
+
+"from these results i understood that
+1. LLama excels in geospatial measuring and it out performed other models in predicting city coordinates and understanding spatial relationships between cities. 
+
+______________________________________
+______________________________________
+
+in the same study they also tried to understand how good the models are with Measuring Geospatial Awareness
+they were given prompts with and without state names, and used geospatial prepositions like "near", "close to" and "far"
+when state names were given, the city locations were closer, showing the models better geospatial awareness, this suggests
+that including state names in prompts gives the models a better ability to understand queries.
+
+2. Both LLaMA and Alpaca are really good at understanding where places are on the map,
+ even without given extra examples. They know a lot about geography right from the start, which means they can help us make search tools
+ that can find places accurately and understand questions about locations better. This makes them great for improving how we search for geographical data."
+
+____________________________________
+______________________________________
+______________________________________
+
+before i talk about the next research i just want to share the term "Geocoding"
+geo coding consists of.. and the algoirthm is supposed to match the description given with a data from the dataset.
+
+
+-Here i want to share a study that was on investigating on if GPT 3.5 LLM enhances geocoding accuracy compared to traditional APIS.
+
+-The study was done on a list of 100 unstructured location descriptions of vehicle accidents in Minnesota
+
+-it was done with two APIS (google and ersi) once on raw location description and once with the location description from GPT.
+
+-and on the other hand it was done with the LLM GPT 3.5
+
+-The results showed that GPT 3.5 alone was the least accurate
+while Ersie API was the most precise and reliable.
+
+-The conclusion is that while AI like GPT 3.5 has potential to assist in geocoding, 
+geocoding APIs currently provide the most accurate and dependable results.
+i wanted to share this result to show the limitations of LLMs like GPT in geocoding tasks, 
+so LLMs should maybe support search functions without relying on their geocoding skills, 
+what should be considered is the components or approaches that i mentioned earlier, like RAG or Query Understanding,
+there are other important approaches that i did not mention, like semantic search, Index Construction and Re-Ranking.

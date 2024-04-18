@@ -1,0 +1,46 @@
+main concept?
+Abstimmung Inhalt der BA
+- Ziel
+- Datenverfügbarkeit
+- Use-Cases
+
+
+solr apache, tokens connection
+sydonome,frage stellen, mmore intellegent
+mit LLMs ? 
+
+such prozess unterstützen
+nutzer startet dialoge, such anfrage eintippen, 
+dialogue fills the themensuche  options
+
+
+
+was ist intilligente suche? 
+
+was gibts für lösung?
+sammlung von ortsuche und themensuche
+was ist möglich/gewünscht? 
+
+feedback katogizieren
+good bad? can be use dor not
+make  a scenario, 
+katalog of whats good and whats bad
+LLM to know what kind of person is searchin
+catogorize peoples expert/knowledge/pros using the language they use
+bodenrichtwerte
+documents have schlagwörter drinne
+aufgabe stellung
+termin when could this end?
+presentation every 2 weeks (10minutes) of what ive done. . .
+
+using large language models for databases
+what are people doing in this subject?
+beispiel scenario of what could be given and whats the result?
+a goal of the work is to get a concept
+nutzung möglichkeit von chatbots
+21.03.
+
+
+
+things that could be used:
+RLHF (Reinforcement Learning with Human Feedback

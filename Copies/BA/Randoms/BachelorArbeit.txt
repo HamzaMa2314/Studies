@@ -1,0 +1,36 @@
+________________________________________________
+_____________IDEAS______________________________
+________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+_____
+
+2. Chatbot fragt allgemeine Fragen zur Suche, um die Ergebnisse zu minimieren, 
+BSP:
+
+  -Suche: Wasser
+
+				(Chatbot empfehlt)
+  -Chatbot: suchst du Themen: Wasserkörper, Sträßen, Unternehmen oder . . .
+		        Orte: Wasserkörper, Sträßen, Unternehmen oder . . .
+
+				(Nutzer wählt)
+	
+	  ? (Entweder wird die suche ergebnis erneut, oder gibt das  
+	    Chatbot mehrere auswähle zurück, oder ganz was anderes) ? 
+
+____
+
+3. Der Nutzer bewertet die Suche um die KI besser zu unterstützen ( Könnte auch durch denselben chatbot gemacht wird)
+
+____
+
